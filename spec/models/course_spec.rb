@@ -8,4 +8,5 @@ RSpec.describe Course, :type => :model do
   describe 'Associations' do
     it{ should have_many :holes }
   end
+
 end

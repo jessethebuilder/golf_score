@@ -3,4 +3,6 @@ class Hole < ActiveRecord::Base
 
   validates :number, :presence => true, :numericality => {:only_integer => true}
   validates :par, :presence => true, :numericality => {:only_integer => true}
+
+  serialize :tees, Hash
 end
